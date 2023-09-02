@@ -1,7 +1,7 @@
 apiVersion: v1
 baseDomain: yourdomain.local
 metadata:
-  name: lab
+  name: okd
 compute:
 - hyperthreading: Disabled
   name: worker
