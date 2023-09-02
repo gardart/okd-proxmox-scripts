@@ -3,12 +3,12 @@
 
 ID=29999
 NAME=fcos-template
-STORAGE=nvme
+STORAGE=local-zfs
 CPU=4
 RAM=16384
 NET_TYPE=virtio
 BRIDGE=vmbr0
-VLAN=20
+VLAN=99
 ADD_STORAGE=112G
 
 /usr/sbin/qm create $ID --name $NAME --cores $CPU --memory $RAM --net0 $NET_TYPE,bridge=$BRIDGE,tag=$VLAN
