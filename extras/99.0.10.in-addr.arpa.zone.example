@@ -1,0 +1,20 @@
+$TTL 8h
+@ IN SOA ns1.gthon.net. hostmaster.gthon.net. (
+                          2023032605 ; serial number
+                          1d         ; refresh period
+                          3h         ; retry period
+                          3d         ; expire time
+                          3h )       ; minimum TTL
+
+                  IN NS   ns1.gthon.net.
+                  IN NS   ns2.gthon.net.
+
+146                 IN PTR  syslog-1.lab.gthon.net.
+147                 IN PTR  syslog-2.lab.gthon.net.
+8                 IN PTR  okd-ha.lab.gthon.net.
+9                 IN PTR  okd-bootstrap.lab.gthon.net.
+10                 IN PTR  okd-master-0.lab.gthon.net.
+11                 IN PTR  okd-master-1.lab.gthon.net.
+12                 IN PTR  okd-master-2.lab.gthon.net.
+8                 IN PTR  api-int.okd.lab.gthon.net.
+8                 IN PTR  api.okd.lab.gthon.net.
