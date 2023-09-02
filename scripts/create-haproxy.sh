@@ -12,6 +12,7 @@ PATH=$(pwd)
 /usr/bin/pveam download $TEMPLATE_STORAGE $TEMPLATE_NAME
 
 /usr/sbin/pct create $ID $TEMPLATE_STORAGE:vztmpl/$TEMPLATE_NAME --cores 1 --hostname okd-haproxy --net0 name=eth0,bridge=$BRIDGE,ip=dhcp,tag=$VLAN,type=veth --ostype debian --storage $STORAGE
+/usr/sbin/pct set $ID --features nesting=1
 /usr/sbin/pct start $ID
 
 /usr/sbin/pct exec $ID -- bash -c 'apt-get update | apt-get -y install curl gnupg2'
