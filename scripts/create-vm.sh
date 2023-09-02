@@ -3,10 +3,10 @@
 ID=$1
 NAME=$2
 MACADDR=$3
-STORAGE=nvme
+STORAGE=local-zfs
 NET_TYPE=virtio
 BRIDGE=vmbr0
-VLAN=20
+VLAN=99
 
 PATH=$(pwd)
 BASE=29999
