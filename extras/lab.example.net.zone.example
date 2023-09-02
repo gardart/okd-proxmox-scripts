@@ -1,0 +1,18 @@
+$TTL 86400
+@ IN SOA ns1.example.net. hostmaster.example.net. (
+  2023032512 ; Serial
+  3600 ; Refresh
+  1800 ; Retry
+  604800 ; Expire
+  86400 ; Minimum TTL
+)
+@ IN NS ns1.example.net.
+ns1 IN A 10.0.99.101
+api.okd IN A 10.0.99.8
+api-int.okd IN A 10.0.99.8
+*.apps.okd IN A 10.0.99.8
+okd-haproxy IN A 10.0.99.8
+okd-bootstrap IN A 10.0.99.9
+okd-master-0 IN A 10.0.99.10
+okd-master-1 IN A 10.0.99.11
+okd-master-2 IN A 10.0.99.12
